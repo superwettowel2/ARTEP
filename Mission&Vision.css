@@ -1,0 +1,511 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.background-image{
+    background-image: url(UH-HEADER/BG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    
+}
+
+/* NAVBAR */
+
+.image-background-top{
+    width: 100%;
+    object-fit: cover;
+    height: 130px;
+    vertical-align: top;
+    display: none;
+    
+}
+
+.sidebar {
+    z-index: 99;
+    position: fixed;
+    right: 0;
+    background-color: #1e5631f8;
+    box-shadow: -10px 3px 10px #102e1a73;
+    height: 0;
+    width: 75%;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.sidebar.open{
+    height: 100vh;
+}
+
+.close{
+    padding: 15px 15px 0 0;
+    padding-bottom: 50px;
+    color: #dfffc9;
+    text-align: end;
+    cursor: pointer;
+    background-color: #386d4a;
+}
+
+.close_btn{
+    background-color: #1E5631;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: #dfffc9;
+
+}
+
+.toggle_btn{
+    color: #1E5631;
+}
+
+.close_btn:hover{
+    color: #ee9f27;
+}
+.toggle_btn:hover{
+    color: #ee9f27;
+}
+a:hover{
+    scale: 1.1;
+    transition: 0.1s;
+}
+
+.sidebar li {
+    display: flex;
+    width: 100%;
+    font-family: Reem Kufi Fun, Arial;
+    margin: 0;
+    box-sizing: border-box;
+    border-top: 1px solid #386d4a;
+    border-bottom: 1px solid #386d4a;
+    padding-left: 2rem;
+    font-size: 10rem;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: #ACDF87;
+    height: 100px;
+    font-family: Reem Kufi Fun, Arial;
+    padding: 0 20px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+.navbar .toggle_btn{
+    color: #1E5631;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-logo {
+    width: 150px;
+    height: 80px;
+    object-fit: fill;
+}
+
+.links-container {
+    display: flex;
+    gap: 2.5rem;
+    font-size: 1.125rem;
+    margin: 0;
+    display: none;
+}
+
+.home1, .about1, .mv1, .er1, .contact1{
+    color: #dfffc9;
+    margin: 0;
+    font-size: 1.4rem;
+    padding-left: 1.2rem;
+    line-height: 5rem;
+}
+li{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #1E5631;
+}
+
+a:hover{
+    color: #ee9f27;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.links {
+    display: none;
+}
+/* NAVBAR */
+
+
+
+
+/* BODY */
+.introduction-container{
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.quote{
+    width: 100%;
+    max-width: 300px;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+
+.mission-vision-container{
+    display: flex;  
+    flex-wrap: wrap;
+}
+
+
+.recycle-img{
+    width: 100%;
+    max-width: 500px;
+    padding-bottom: 1.5rem;
+}
+
+
+.mission-vision{
+    color: #1E5631;
+    font-family: Reem Kufi Fun, Arial;
+    font-size: 1.4rem;
+    margin: 0;
+    max-width: 500px;
+    padding-bottom: 1rem;
+}
+.mission, .vision{
+    width: 100%;
+    max-width: 500px;
+    font-size: 1.2rem;
+    color: #1E5631;
+    font-family: Reem Kufi Fun, Arial;
+    margin: 0;
+}
+.mv-container{
+    padding-bottom: 280px;
+}
+
+/* BODY */
+
+
+
+
+/* FOOTER */
+.footer-header{
+    background-color: #ACDF87;
+    height: 150px;
+    width: 100%;
+
+}
+
+.contacte{
+    color: #1E5631;
+    font-family: Rubik, Arial;
+    font-weight: 700;
+    margin: 0;
+    
+}
+.links-footer{
+    flex-direction: column;
+}
+
+.contact-container .mail2{
+    margin: 0;
+    color: #1E5631;
+}
+.mail:hover{
+    color: #ee9f27;
+}
+
+.footer {
+    padding-top: 1.5rem;
+    font-size: 0.9rem;
+    font-family: Reem Kufi Fun, Arial;
+    line-height: 1.8rem;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: space-around;
+}
+/* FOOTER */
+
+
+
+
+
+
+
+/* MEDIUM MOBILE */
+@media only screen and (min-width: 375px) {
+    .image-background-top {
+        height: 130px;
+    }
+
+    .sidebar {
+        display: block;
+    }
+
+    .footer-header{
+        height: 200px;
+    }
+    .about2, .er2, .home2, .contact2{
+        font-size: 1rem;
+        line-height: 2.5rem;
+    }
+    .contacte{
+        font-size: 0.8rem;
+    }
+    .facebook2, .mail2{
+        font-size: 1rem;
+        line-height: 2.5rem;
+    }
+
+    .home1, .about1, .mv1, .er1, .contact1{
+        color: #dfffc9;
+        margin: 0;
+        font-size: 1.4rem;
+        padding-left: 1.2rem;
+    }
+
+    .quote{
+        width: 100%;
+        max-width: 345px;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+
+}
+
+/* LARGE MOBILE */
+@media only screen and (min-width: 425px) {
+    .image-background-top {
+        height: 130px;
+    }
+
+    .sidebar {
+        display: block;
+    }
+
+    .footer-header{
+        height: 200px;
+    }
+    .about2, .er2, .home2, .contact2{
+        font-size: 1rem;
+        line-height: 2.5rem;
+    }
+    .contacte{
+        font-size: 0.8rem;
+    }
+    .facebook2, .mail2{
+        font-size: 1rem;
+        line-height: 2.5rem;
+    }
+
+    .home1, .about1, .mv1, .er1, .contact1{
+        color: #dfffc9;
+        margin: 0;
+        font-size: 1.4rem;
+        padding-left: 1.2rem;
+    }
+
+    .mission-vision-container{
+        display: flex;  
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .quote{
+        width: 100%;
+        max-width: 400px;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+
+    
+
+}
+
+/* TABLET */
+@media only screen and (min-width: 768px) {
+
+    .image-background-top {
+        height: 130px;
+    }
+
+    .sidebar {
+        display: block;
+    }
+
+    
+    .footer-header{
+        height: 200px;
+    }
+    .about2, .er2, .home2, .contact2{
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+    .contacte{
+        font-size: 1.1rem;
+    }
+    .facebook2, .mail2{
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+    
+    .mission-vision-container, .quote-container{
+        display: flex;  
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .mission-vision{
+        font-size: 1.7rem;
+    }
+    .mission, .vision{
+        font-size: 1.4rem;
+    }
+
+    .quote{
+        width: 100%;
+        max-width: 500px;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        justify-content: center;
+    }
+    
+    .image-background-top{
+        display: block;
+    }
+    
+    
+    
+}
+
+/* LAPTOP */
+@media only screen and (min-width: 1024px) {
+   
+    .image-background-top {
+        height: 150px;
+    }
+
+    .nav-logo{
+        width: 170px;
+    }
+
+    .toggle_btn{
+        display: none;
+        transition: 0.2s;
+    }
+    .navbar{
+        justify-content: center;
+    }
+    li:hover{
+        scale: 1.05;
+        transition: 0.1s;
+    }
+    .home, .about, .mv, .er, .contact{
+        font-size: 1.1rem;
+    }
+
+    .footer-header{
+        height: 200px;
+    }
+    .about2, .er2, .home2, .contact2{
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+    .contacte{
+        font-size: 1.1rem;
+    }
+    .facebook2, .mail2{
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+    .mission-vision{
+        font-size: 1.9rem;
+    }
+    .mission, .vision{
+        font-size: 1.6rem;
+    }
+    .recycle-img{
+        max-width: 600px;
+    }
+    .mission-vision, .mission, .vision{
+        max-width: 600px;
+    }
+
+    .mission-vision-container, .quote-container{
+        display: flex;  
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+
+    .quote{
+        width: 100%;
+        max-width: 550x;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        justify-content: center;
+    }
+    
+    .links-container {
+        display: flex;
+        font-size: 0.9rem;
+        gap: 5rem;
+    }
+}
+
+/* PC */
+@media only screen and (min-width: 1440px) {
+
+    .image-background-top {
+        height: 225px;
+    }
+    .navbar{
+        justify-content: center;
+    }
+
+    .nav-logo{
+        width: 260px;
+    }
+    li:hover{
+        scale: 1.05;
+        transition: 0.1s;
+    }
+    .home, .about, .mv, .er, .contact{
+        font-size: 1.2rem;
+    }
+    
+    .quote-container > .mission-vision-container {
+        display: flex;  
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        justify-content: start;
+    }
+
+    .quote{
+        width: 100%;
+        max-width: 700px;
+        padding-top: 3rem;
+        padding-bottom: 7rem;
+        justify-content: end;
+    }
+
+    .recycle-img{
+        padding-top: 6rem;
+    }
+   
+
+}
+
+

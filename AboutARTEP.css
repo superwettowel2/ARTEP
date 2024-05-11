@@ -1,0 +1,766 @@
+:root{
+    --primary-green: #ACDF87;
+    --secondary-green: #1E5631;
+    --third-green: #dfffc9;
+    --fourth-green: #386d4a;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.background-image{
+    background-image: url(UH-HEADER/BG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* NAVBAR */
+
+.image-background-top{
+    width: 100%;
+    object-fit: cover;
+    height: 130px;
+    vertical-align: top;
+    display: none;
+    
+}
+
+
+.sidebar {
+    z-index: 99;
+    position: fixed;
+    right: 0;
+    background-color: #1e5631f8;
+    box-shadow: -10px 3px 10px #102e1a73;
+    height: 0;
+    width: 75%;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.sidebar li {
+    display: flex;
+    width: 100%;
+    font-family: Reem Kufi Fun, Arial;
+    margin: 0;
+    box-sizing: border-box;
+    border-top: 1px solid var(--fourth-green);
+    border-bottom: 1px solid var(--fourth-green);
+    padding-left: 2rem;
+    font-size: 10rem;
+}
+.close{
+    padding: 15px 15px 0 0;
+    padding-bottom: 50px;
+    color: #dfffc9;
+    text-align: end;
+    cursor: pointer;
+    background-color: #386d4a;
+}
+.close_btn{
+    background-color: #1E5631;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: #dfffc9;
+
+}
+.home1, .about1, .mv1, .er1, .contact1{
+    color: #dfffc9;
+    margin: 0;
+    line-height: 5rem;
+    font-size: 1rem;
+    
+}
+
+.sidebar.open{
+    height: 100vh;
+}
+
+.toggle_btn{
+    color: #1E5631;
+}
+
+.close_btn:hover{
+    color: #ee9f27;
+}
+.toggle_btn:hover{
+    color: #ee9f27;
+}
+a:hover{
+    scale: 1.1;
+    transition: 0.1s;
+}
+
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-green);
+    height: 100px;
+    font-family: Reem Kufi Fun, Arial;
+    padding: 0 20px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+.navbar .toggle_btn{
+    color: #1E5631;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-logo {
+    width: 150px;
+    height: 80px;
+    object-fit: fill;
+}
+
+.links-container {
+    display: flex;
+    gap: 2.5rem;
+    font-size: 1.12rem;
+    margin: 0;
+    display: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #1E5631;
+}
+
+a:hover{
+    color: #ee9f27;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.links {
+    display: none;
+}
+/* NAVBAR */
+
+
+
+
+/* BODY */
+p{
+    margin: 0;
+}
+
+.about-container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 7rem;
+}
+
+.about-header{
+    margin: 0;
+    font-size: 2rem;
+    font-family: Reem Kufi Fun, Arial;
+    color: #1E5631;
+    max-width: 500px;
+}
+.about-info{
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: Reem Kufi Fun, Arial;
+    color: #1E5631;
+    max-width: 500px;
+}
+
+.three-rs{
+    width: 100%;
+    max-width: 500px;
+}
+
+
+
+.importance-container, .importance-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 1em;
+    padding-right: 1rem;
+    align-items: center;
+
+    
+}
+.importance-info{
+    padding-bottom: 7rem;
+}
+
+
+.impo-header{
+    margin: 0;
+    font-size: 2rem;
+    font-family: Outfit, Arial;
+    color: #1E5631;
+    max-width: 500px;
+    max-width: 600px;
+    line-height: 2.2rem;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.imp-intro{
+    padding-top: 3rem;
+    font-size: 1.3rem;
+    color: #1E5631;
+    font-family: Rubik, Arial;
+    max-width: 600px;
+}
+
+.impo-info1, .impo-info2, .impo-info3, .impo-info4{
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    padding-bottom: 1.2rem;
+    padding-top: 1.2rem;
+}
+
+.impo-info5{
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    padding-top: 1.2rem;
+}
+
+
+p, .importance-info{
+    color: #1E5631;
+    font-size: 1.2rem;
+    font-family: Reem Kufi Fun, Arial;
+    word-spacing: 0.3rem;
+    max-width: 600px;
+}
+
+.impo-head{
+    margin: 0;
+    font-size: 1.3rem;
+    font-family: Outfit, Arial;
+    color: #1E5631;
+    max-width: 500px;
+    max-width: 600px;
+    font-family: Rubik, Arial;
+
+}
+
+.importance-info-container{
+    padding-bottom: 5rem;
+}
+
+
+.obj-sig-containter{
+    background-color: #b6fd8685;
+    padding-left: 1em;
+    padding-right: 1rem;
+    padding-bottom: 3rem;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 7rem;
+}
+
+
+
+.obj-sig-header{
+    margin: 0;
+    font-size: 2rem;
+    font-family: Reem Kufi Fun, Arial;
+    color: #1E5631;
+    max-width: 500px;
+    padding-top: 2.5rem;
+    max-width: 600px;
+}
+
+h2{
+    color: var(--secondary-green);
+    font-family: Rubik, Arial;
+    font-style: italic  ;
+    margin: 0;
+    font-size: 1.5rem;
+    padding-bottom: 0.8rem;
+    max-width: 600px;
+}
+.obj-info, .sig-info{
+    margin: 0;
+    font-family: Reem Kufi Fun, Arial;
+    color: var(--secondary-green);
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+
+
+
+/* BODY */
+
+
+
+
+/* FOOTER */
+.footer-header{
+    background-color: #ACDF87;
+    height: 150px;
+    width: 100%;
+}
+
+.contacte{
+    color: #1E5631;
+    font-family: Rubik, Arial;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.facebook2, .mail2{
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.mv2, .er2, .home2{
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.links-footer{
+    flex-direction: column;
+}
+
+.contact-container .mail2{
+    margin: 0;
+    color: #1E5631;
+}
+.mail:hover{
+    color: #ee9f27;
+}
+
+.footer {
+    padding-top: 1.5rem;
+    font-size: 0.9rem;
+    font-family: Reem Kufi Fun, Arial;
+    line-height: 1.8rem;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: space-around;
+}
+
+/* FOOTER */
+
+
+
+
+
+
+
+/* MEDIUM MOBILE */
+@media only screen and (min-width: 375px) {
+    .image-background-top {
+        height: 130px;
+    }
+
+    .sidebar {
+        display: block;
+    }
+
+    .footer-header{
+        height: 200px;
+    }
+    .mv2, .er2, .home2, .contact2{
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+    .contacte{
+        font-size: 0.8rem;
+    }
+    .facebook2, .mail2{
+        font-size: 1rem;
+        line-height: 2.5rem;
+    }
+
+    .home1, .about1, .mv1, .er1, .contact1{
+        color: #dfffc9;
+        margin: 0;
+        font-size: 1.4rem;
+        padding-left: 1.2rem;
+    }
+
+    
+
+}
+
+/* LARGE MOBILE */
+@media only screen and (min-width: 425px) {
+    .image-background-top {
+        height: 130px;
+    }
+
+    .sidebar {
+        display: block;
+    }
+
+    .footer-header{
+        height: 200px;
+    }
+    .mv2, .er2, .home2, .contact2{
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+    .contacte{
+        font-size: 0.8rem;
+    }
+    .facebook2, .mail2{
+        font-size: 1rem;
+        line-height: 2.5rem;
+    }
+
+    .home1, .about1, .mv1, .er1, .contact1{
+        color: #dfffc9;
+        margin: 0;
+        font-size: 1.4rem;
+        padding-left: 1.2rem;
+    }
+
+    
+    
+
+}
+
+/* TABLET */
+@media only screen and (min-width: 768px) {
+
+    .image-background-top {
+        height: 130px;
+        display: block;
+    }
+
+    .sidebar {
+        display: block;
+    }
+
+    .footer-header{
+        height: 200px;
+    }
+    .mv2, .er2, .home2, .contact2{
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+    
+    .facebook2, .mail2{
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+    
+    .about-container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 3rem;
+        padding-bottom: 7rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    
+    }
+    
+    .about-header{
+        margin: 0;
+        font-size: 2.4rem;
+        font-family: Reem Kufi Fun, Arial;
+        color: #1E5631;
+        max-width: 500px;
+    }
+    .about-info{
+        margin: 0;
+        font-size: 1.5rem;
+        font-family: Reem Kufi Fun, Arial;
+        color: #1E5631;
+        max-width: 500px;
+    }
+
+    .about-info1{
+        font-size: 1.4rem;
+    }
+    
+    .obj-sig-containter{
+        padding-left: 1em;
+        padding-right: 1rem;
+        padding-bottom: 3.5rem;
+        border-radius: 30px;
+        display: flex;  
+        justify-content: space-evenly;
+      
+    }
+    
+    .obj-sig-header{
+        margin: 0;
+        font-size: 2.4rem;
+        font-family: Reem Kufi Fun, Arial;
+        color: #1E5631;
+        max-width: 500px;
+        padding-top: 3rem;
+        max-width: 600px;
+
+    }
+    
+    h2{
+        color: var(--secondary-green);
+        font-family: Rubik, Arial;
+        font-style: italic  ;
+        margin: 0;
+        font-size: 1.6rem;
+        padding-bottom: 0.8rem;
+        max-width: 600px;
+    }
+    .obj-info, .sig-info{
+        margin: 0;
+        font-family: Reem Kufi Fun, Arial;
+        color: var(--secondary-green);
+        font-size: 1.3rem;
+        max-width: 600px;
+    } 
+
+    .impo-header{
+        font-size: 2.2rem;
+        max-width: 600px;
+        padding-bottom: 1rem;
+       
+    }
+    
+   
+    
+    .imp-intro{
+        font-size: 1.5rem;
+        max-width: 600px;
+    }
+    
+    .impo-info1, .impo-info2, .impo-info3, .impo-info4{
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        padding-bottom: 1.2rem;
+        padding-top: 1.2rem;
+    }
+    .impo-info5{
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        padding-top: 1.2rem;
+    }
+
+    p, .importance-info{
+        font-size: 1.5rem;
+        max-width: 600px;
+    }
+    
+    .impo-head{
+        font-size: 1.7rem;
+        max-width: 600px;
+    
+    }
+    
+    .importance-info-container{
+        padding-bottom: 5rem;
+    }
+
+
+}
+
+/* LAPTOP */
+@media only screen and (min-width: 1024px) {
+   
+    .image-background-top {
+        height: 150px;
+    }
+
+    
+    .nav-logo{
+        width: 170px;
+    }
+
+    .toggle_btn{
+        display: none;
+        transition: 0.2s;
+    }
+    .navbar{
+        justify-content: center;
+    }
+    li:hover{
+        scale: 1.05;
+        transition: 0.1s;
+    }
+    .home, .about, .mv, .er, .contact{
+        font-size: 1.1rem;
+    }
+
+    .footer-header{
+        height: 200px;
+    }
+    .about2, .er2, .home2, .contact2{
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+    .contacte{
+        font-size: 1.1rem;
+    }
+    .facebook2, .mail2{
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+    
+    .links-container {
+        display: flex;
+        font-size: 0.9rem;
+        gap: 5rem;
+    }
+
+    .about-header{
+        margin: 0;
+        font-size: 2.6rem;
+        font-family: Reem Kufi Fun, Arial;
+        color: #1E5631;
+        max-width: 600px;
+    }
+    .about-info{
+        margin: 0;
+        font-size: 1.7rem;
+        font-family: Reem Kufi Fun, Arial;
+        color: #1E5631;
+        max-width: 600px;
+    }
+
+    .about-info1{
+        font-size: 1.6rem;
+    }
+
+    .three-rs{
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .about-container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 6rem;
+        padding-bottom: 7rem;
+    }
+
+    .obj-sig-containter{
+        padding-left: 1em;
+        padding-right: 1rem;
+        padding-bottom: 5rem;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    
+    .obj-sig-header{
+        margin: 0;
+        font-size: 2.6rem;
+        font-family: Reem Kufi Fun, Arial;
+        color: #1E5631;
+        max-width: 500px;
+        padding-top: 4rem;
+        max-width: 800px;
+    }
+    
+    h2{
+        color: var(--secondary-green);
+        font-family: Rubik, Arial;
+        font-style: italic  ;
+        margin: 0;
+        font-size: 1.8rem;
+        padding-bottom: 0.8rem;
+        max-width: 800px;
+    }
+    .obj-info, .sig-info{
+        margin: 0;
+        font-family: Reem Kufi Fun, Arial;
+        color: var(--secondary-green);
+        font-size: 1.5rem;
+        max-width: 900px;
+    } 
+
+    .impo-header{
+        font-size: 2.4rem;
+        max-width: 1300px;
+        padding-bottom: 2rem;
+    }
+    
+    
+    .imp-intro{
+        font-size: 1.6rem;
+        max-width: 1300px;
+    }
+
+    .impo-info1, .impo-info2, .impo-info3, .impo-info4{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding-bottom: 2rem;
+        padding-top: 1.5rem;
+    }
+    .impo-info5{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding-top: 1.5rem;
+    }
+
+    p, .importance-info{
+        font-size: 1.6rem;
+        max-width: 1300px;
+    }
+    
+    .impo-head{
+        font-size: 2rem;
+        max-width: 1300px;
+    
+    }
+    
+    .importance-info-container{
+        padding-bottom: 5rem;
+    }
+
+
+}
+
+/* PC */
+@media only screen and (min-width: 1440px) {
+
+    .image-background-top {
+        height: 225px;
+    }
+    .navbar{
+        justify-content: center;
+    }
+
+    .nav-logo{
+        width: 260px;
+    }
+    li:hover{
+        scale: 1.05;
+        transition: 0.1s;
+    }
+    .home, .about, .mv, .er, .contact{
+        font-size: 1.2rem;
+    }
+    
+    .impo-header{
+        font-size: 2.6rem;
+        max-width: 1300px;
+        text-align: center;
+    }
+
+}
+
+

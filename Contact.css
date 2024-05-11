@@ -1,0 +1,850 @@
+:root{
+    --primary-green: #ACDF87;
+    --secondary-green: #1E5631;
+    --third-green: #dfffc9;
+    --fourth-green: #386d4a;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.background-image{
+    background-image: url(UH-HEADER/BG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* NAVBAR */
+
+.image-background-top{
+    width: 100%;
+    object-fit: cover;
+    height: 130px;
+    vertical-align: top;
+    display: none;
+    
+}
+
+
+.sidebar {
+    z-index: 99;
+    position: fixed;
+    right: 0;
+    background-color: #1e5631f8;
+    box-shadow: -10px 3px 10px #102e1a73;
+    height: 0;
+    width: 75%;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.sidebar li {
+    display: flex;
+    width: 100%;
+    font-family: Reem Kufi Fun, Arial;
+    margin: 0;
+    box-sizing: border-box;
+    border-top: 1px solid var(--fourth-green);
+    border-bottom: 1px solid var(--fourth-green);
+    padding-left: 2rem;
+    font-size: 10rem;
+}
+.close{
+    padding: 15px 15px 0 0;
+    padding-bottom: 50px;
+    color: #dfffc9;
+    text-align: end;
+    cursor: pointer;
+    background-color: #386d4a;
+}
+.close_btn{
+    background-color: #1E5631;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: #dfffc9;
+
+}
+.home1, .about1, .mv1, .er1, .contact1{
+    color: #dfffc9;
+    margin: 0;
+    line-height: 5rem;
+    font-size: 1rem;
+    
+}
+
+.sidebar.open{
+    height: 100vh;
+}
+
+.toggle_btn{
+    color: #1E5631;
+}
+
+.close_btn:hover{
+    color: #ee9f27;
+}
+.toggle_btn:hover{
+    color: #ee9f27;
+}
+
+
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-green);
+    height: 100px;
+    font-family: Reem Kufi Fun, Arial;
+    padding: 0 20px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+.navbar .toggle_btn{
+    color: #1E5631;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-logo {
+    width: 150px;
+    height: 80px;
+    object-fit: fill;
+}
+
+.links-container {
+    display: flex;
+    gap: 2.5rem;
+    font-size: 1.12rem;
+    margin: 0;
+    display: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #1E5631;
+}
+
+a:hover{
+    color: #ee9f27;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.links {
+    display: none;
+}
+/* NAVBAR */
+
+
+
+
+/* BODY */
+.contact-main{
+    padding: 2rem 1.3rem 0 1.3rem;
+    justify-content: space-evenly;
+}
+
+
+
+.contact-header{
+    margin: 0;
+    font-size: 1.6rem;
+    font-family: Reem Kufi Fun, Arial;
+    color: #1E5631;
+    margin-bottom: 3rem;
+    padding-bottom: 0.5rem;
+    box-sizing: border-box;
+    border-bottom: solid 2px;
+    padding-left: 15px;
+}
+
+.git-hr{
+    border: none;
+    width: 120px;
+    align-items: start;
+    height: 5px;
+    background-color: #1E5631;
+    border-radius: 10px;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.get-in-touch{
+    margin: 0;
+    font-size: 1.8rem;
+    font-family: Rubik, Arial;
+    font-style: italic;
+    color: #1E5631;
+    margin-bottom: 0.7rem;
+}
+
+.contact-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid #1E5631;
+    flex-wrap: wrap;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.contact-inputs{
+    padding: 8px 20px 8px 20px;
+    font-family: Reem Kufi Fun, Arial;
+    border-radius: 50px;
+    border: solid 1px #1E5631;
+    width: 240px;
+}
+.contact-inputs-msg{
+    padding: 10px 20px 8px 20px;
+    font-family: Reem Kufi Fun, Arial;
+    height: 140px;
+    width: 240px;
+    border-radius: 20px;
+    border: solid 1px #1E5631;
+}
+
+.contact-inputs:focus, .contact-inputs-msg:focus{
+    border: solid 2px #ee9f27;
+}
+.contact-inputs::placeholder, .contact-inputs-msg::placeholder{
+    color: #1e5631c5;
+}
+
+.contact_btn{
+    border-radius: 50px;
+    border: solid 1px #1E5631;
+    background-color: #ACDF87;
+    color: #1E5631;
+    padding: 10px 0 10px 0;
+    width: 130px;
+    margin-bottom: 2rem;
+}
+
+.contact-inf{
+    max-width: 400px;
+    margin: 0;
+    color: #1E5631;
+    font-size: 1.3rem;
+    font-family: Reem Kufi Fun, Arial;
+}
+
+
+
+.team{
+    margin: 0;
+    font-size: 2rem;
+    font-family: Outfit, Arial;
+    color: #1E5631; 
+    padding-top: 5rem;
+    word-spacing: 0.3rem;
+    text-align: center;
+    text-decoration: underline;
+}
+.team-discover{
+    font-family: Reem Kufi Fun, Arial;
+    text-align: center;
+    margin: 0;
+    font-size: 1.2rem;
+    color: #1E5631;
+    padding-top: 0.5rem;
+    word-spacing: 0.3rem;
+}
+
+#fb-contact, #email-contact{
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+}
+#fb-contact-link:hover{
+    color: #ee9f27;
+    transition: 0.15s;
+}
+
+
+#email-contact-link, #fb-contact-link{
+    color: #1E5631;
+    font-size: 1.2rem;
+    font-family: Reem Kufi Fun, Arial;
+    margin: 0;
+}
+
+.profile-container-all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
+    gap: 80px;
+}
+
+/* CARD-SLIDER */
+
+.cards .card .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+.container{
+    max-width: 950px;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.container .main-card{
+    width: 300%;
+    display: flex;
+    justify-content: space-evenly;
+    transition: all 1s ease;
+
+}
+
+
+#two:checked ~ .main-card{
+    margin-left: -100%;
+}
+#three:checked ~ .main-card{
+    margin-left: -200%;
+}
+
+.main-card .cards{
+    width: calc(100% / 2 - 10px);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    flex-wrap: wrap;
+}
+
+
+
+.main-card .cards .card{
+    background: white;
+    width: calc(100% / 3 - 10px);
+    border-radius: 24px;
+    transition: all 0.4s ease;
+}
+
+.main-card .cards .card:hover{
+    transform: translateY(-15px);
+}
+
+.cards .card .content .img{
+    height: 130px;
+    width: 130px;
+    margin-bottom: 14px;
+    background: #1E5631;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.card{
+    margin: 20px 0 10px 0;
+}
+
+.card .content .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #dfffc9;
+
+}
+.card .content .details .name{
+    font-size: 20px; 
+    color: #1E5631; 
+}
+
+.card .content .details{
+    font-size: px;
+    color: #1E5631; 
+}
+
+.card .content .media-icons{
+    display: flex;
+    margin-top: 10px;
+}
+
+.card .content .media-icons a{
+    height: 35px; 
+    width: 35px;
+    color: #dfffc9;
+    background-color: #1E5631;
+    margin: 0 4px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    font-size: 14px;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+
+.card .content .media-icons a:hover{
+    border-color: #ee9f27;
+    color: #ee9f27;
+    background: white;
+}
+
+.button{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    padding-bottom: 200px;
+}
+
+.button label{
+    height: 15px;
+    width: 15px;
+    background: #dfffc9;
+    margin: 0 4px;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    border: solid 2px #1E5631;
+}
+
+.button label.active{
+    width: 35px;
+}
+
+#one:checked ~ .button label.one{
+    width: 35px;
+}
+
+#two:checked ~ .button label.two{
+    width: 35px;
+}
+
+#three:checked ~ .button label.three{
+    width: 35px;
+}
+
+
+#two:checked ~ .button label.one{
+    width: 15px;
+}
+
+#three:checked ~ .button label.one{
+    width: 15px;
+}
+
+.content{
+    padding: 20px 0;
+    border: solid 2px #1E5631;
+    border-radius: 25px;
+}
+
+.name, .job{
+    font-family: Reem Kufi Fun, Arial;
+}
+.job{
+    font-size: 0.8rem;
+}
+
+
+/* CARD-SLIDER */
+
+
+/* BODY */
+
+
+
+
+/* FOOTER */
+.footer-header{
+    background-color: #ACDF87;
+    height: 150px;
+    width: 100%;
+}
+
+.contacte{
+    color: #1E5631;
+    font-family: Rubik, Arial;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.facebook2, .mail2{
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.mv2, .er2, .home2{
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.links-footer{
+    flex-direction: column;
+}
+
+.contact-container .mail2{
+    margin: 0;
+    color: #1E5631;
+}
+.mail:hover{
+    color: #ee9f27;
+}
+
+.footer {
+    padding-top: 1.5rem;
+    font-size: 0.9rem;
+    font-family: Reem Kufi Fun, Arial;
+    line-height: 1.8rem;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: space-around;
+}
+
+/* FOOTER */
+
+
+
+
+
+
+
+/* MEDIUM MOBILE */
+@media only screen and (min-width: 375px) {
+
+    /* KEEP */
+    .image-background-top {
+        height: 130px;
+    }
+
+    .sidebar {
+        display: block;
+    }
+
+    .footer-header{
+        height: 200px;
+    }
+    .mv2, .er2, .home2, .contact2{
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+    .contacte{
+        font-size: 0.8rem;
+    }
+    .facebook2, .mail2{
+        font-size: 1rem;
+        line-height: 2.5rem;
+    }
+
+    .home1, .about1, .mv1, .er1, .contact1{
+        color: #dfffc9;
+        margin: 0;
+        font-size: 1.4rem;
+        padding-left: 1.2rem;
+    }
+    /* KEEP */
+    
+    .main-card .cards .card{
+        background: white;
+        width: 100%;
+    
+    } 
+
+    
+}
+
+/* LARGE MOBILE */
+@media only screen and (min-width: 425px) {
+
+    /* KEEP */
+    .image-background-top {
+        height: 130px;
+    }
+
+    .sidebar {
+        display: block;
+    }
+
+    .footer-header{
+        height: 200px;
+    }
+    .mv2, .er2, .home2, .contact2{
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+    .contacte{
+        font-size: 0.8rem;
+    }
+    .facebook2, .mail2{
+        font-size: 1rem;
+        line-height: 2.5rem;
+    }
+
+    .home1, .about1, .mv1, .er1, .contact1{
+        color: #dfffc9;
+        margin: 0;
+        font-size: 1.4rem;
+        padding-left: 1.2rem;
+    }
+    /* KEEP */
+    
+   
+
+
+}
+
+/* TABLET */
+@media only screen and (min-width: 768px) {
+
+    /* KEEP */
+    .image-background-top {
+        height: 130px;
+        display: block;
+    }
+
+    .sidebar {
+        display: block;
+    }
+
+    .footer-header{
+        height: 200px;
+    }
+    .mv2, .er2, .home2, .contact2{
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+    
+    .facebook2, .mail2{
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+    /* KEEP */    
+    
+    
+
+    .contact-header{
+        margin: 0;
+        font-size: 1.7rem;
+        font-family: Reem Kufi Fun, Arial;
+        color: #1E5631;
+        margin-bottom: 3rem;
+        padding-bottom: 0.5rem;
+        box-sizing: border-box;
+        border-bottom: solid 2px;
+        padding-left: 50px;
+        
+    }
+    
+    .contact_btn{
+        border-radius: 50px;
+        border: solid 1px #1E5631;
+        background-color: #ACDF87;
+        color: #1E5631;
+        padding: 10px 0 10px 0;
+        width: 130px;
+        margin-bottom: 2rem;
+    }
+    
+    .contact-inf{
+        max-width: 400px;
+        margin: 0;
+        color: #1E5631;
+        font-size: 1.3rem;
+        font-family: Reem Kufi Fun, Arial;
+    }
+        
+
+    .main-card .cards .card{
+        background: white;
+        width: calc(100% / 3 - 10px);
+        margin: 20px 0 10px 0;
+    }
+
+    }
+
+    
+
+   
+/* LAPTOP */
+@media only screen and (min-width: 1024px) {
+
+    /* KEEP */
+    .image-background-top {
+        height: 150px;
+    }
+
+    
+    .nav-logo{
+        width: 170px;
+    }
+
+    .toggle_btn{
+        display: none;
+        transition: 0.2s;
+    }
+    .navbar{
+        justify-content: center;
+    }
+    li:hover{
+        scale: 1.05;
+        transition: 0.1s;
+    }
+    .home, .about, .mv, .er, .contact{
+        font-size: 1.1rem;
+    }
+
+    .footer-header{
+        height: 200px;
+    }
+    .about2, .er2, .home2, .contact2{
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+    .contacte{
+        font-size: 1.1rem;
+    }
+    .facebook2, .mail2{
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+    
+    .links-container {
+        display: flex;
+        font-size: 0.9rem;
+        gap: 5rem;
+    }
+    /* KEEP */
+    
+    
+
+    .contact-header{
+        margin: 0;
+        font-size: 2rem;
+        font-family: Reem Kufi Fun, Arial;
+        color: #1E5631;
+        margin-bottom: 7rem;
+        padding-bottom: 0.5rem;
+        box-sizing: border-box;
+        border-bottom: solid 2px;
+        padding-left: 100px;
+        
+    }
+
+    .get-in-touch{
+        margin: 0;
+        font-size: 1.8rem;
+        font-family: Rubik, Arial;
+        font-style: italic;
+        color: #1E5631;
+        margin-bottom: 0.7rem;
+    }
+    
+    .contact-cont{
+        display: flex;
+        justify-content: start;
+        justify-content: space-evenly;
+    }
+    
+    .contact-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: start;
+        gap: 20px;
+    }
+    
+    .contact-inputs{
+        padding: 8px 20x 8px 20px;
+        font-family: Reem Kufi Fun, Arial;
+        border-radius: 50px;
+        border: solid 1px #1E5631;
+        width: 350px;
+    }
+    .contact-inputs-msg{
+        padding: 10px 20px 8px 20px;
+        font-family: Reem Kufi Fun, Arial;
+        height: 200px;
+        width: 400px;
+        border-radius: 20px;
+        border: solid 1px #1E5631;
+    }
+
+    .contact_btn{
+        border-radius: 50px;
+        border: solid 1px #1E5631;
+        background-color: #ACDF87;
+        color: #1E5631;
+        padding: 10px 0 10px 0;
+        width: 130px;
+        margin-bottom: 2rem;
+    }
+    
+    .contact-inf{
+        max-width: 400px;
+        margin: 0;
+        color: #1E5631;
+        font-size: 1.3rem;
+        font-family: Reem Kufi Fun, Arial;
+    }
+
+}
+
+/* PC */
+@media only screen and (min-width: 1440px) {
+
+    /* KEEP */
+    .image-background-top {
+        height: 225px;
+    }
+    .navbar{
+        justify-content: center;
+    }
+
+    .nav-logo{
+        width: 260px;
+    }
+    li:hover{
+        scale: 1.05;
+        transition: 0.1s;
+    }
+    .home, .about, .mv, .er, .contact{
+        font-size: 1.2rem;
+    }
+    /* KEEP */
+ 
+    .img-article{
+        gap: 5rem;
+    }
+
+}
+
